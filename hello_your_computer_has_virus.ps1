@@ -1,3 +1,9 @@
+$wshell = New-Object -ComObject WScript.Shell # Create a WScript.Shell object
+
+for ($i = 0; $i -lt 100; $i++) { # Max volume
+    $wshell.SendKeys([char]175)
+}
+
 $player = New-Object System.Media.SoundPlayer
 
 $wavUri = 'https://github.com/h1dd3n3y3/hello_your_computer_has_virus/raw/refs/heads/main/Hello_Your_Computer_Has_Virus.wav'
