@@ -1,7 +1,7 @@
 $wshell = New-Object -ComObject WScript.Shell # Create a WScript.Shell object
 
 for ($i = 0; $i -lt 100; $i++) { # Max volume
-    $wshell.SendKeys([char]175)
+    $wshell.SendKeys([char]175) # Volume up key
 }
 
 $player = New-Object System.Media.SoundPlayer
